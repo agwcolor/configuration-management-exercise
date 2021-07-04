@@ -28,5 +28,6 @@ spec:
         imagePullPolicy: IfNotPresent
         name: {{ .Values.deployment.name }}
         resources:
+          requests:
             cpu: {{ .Values.resources.CPU }}
             memory: {{ .Values.resources.Memory }}
